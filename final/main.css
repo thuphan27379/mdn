@@ -99,7 +99,7 @@ h1 {
 h2 {
   font: var(--type-heading-h2);
   margin: 4rem 0 0.5rem;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 h3 {
@@ -133,14 +133,14 @@ h6 {
   font: var(--type-heading-h6);
 }
 
-h1 code,
+/* h1 code,
 h2 code,
 h3 code,
 h4 code,
 h5 code,
 h6 code {
   font-size: inherit;
-}
+} */
 
 p {
   margin: 1rem 0 2rem;

@@ -67,6 +67,10 @@
   margin: 0;
 }
 
+.homepage-hero section h3 {
+  font-size: 25px;
+}
+
 @media screen and (min-width: 426px) {
   .homepage-hero section h1 {
     font-size: 2.5rem;
@@ -106,6 +110,7 @@ svg.icon {
   font: var(--type-heading-h4);
   margin-top: 0;
   color: white;
+  font-size: 25px;
 }
 
 .featured-articles .tile-container {
@@ -221,6 +226,8 @@ svg.icon {
 .latest-news h2 {
   font: var(--type-heading-h4);
   margin-top: 1rem;
+  color: white;
+  font-size: 25px;
 }
 
 .latest-news h5 {
@@ -261,6 +268,7 @@ svg.icon {
   color: white;
 }
 
+/* domain list title black or white */
 .latest-news .news-title a {
   color: white;
 }
@@ -295,6 +303,7 @@ svg.icon {
   font: var(--type-heading-h4);
   margin-top: 1rem;
   color: white;
+  font-size: 25px;
 }
 
 .recent-contributions h5 {
