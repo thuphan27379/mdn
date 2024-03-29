@@ -1,0 +1,211 @@
+:root {
+  /* color */
+  --primary-color-red: #b31942;
+  --light-red: "#e65e7a";
+  --dark-red: "#7c093a";
+  --primary-color-blue: #0a3161;
+  --light-blue: "#476390";
+  --dark-blue: "#04214a";
+  --white-color: #fff;
+  --black-color: #000;
+  --grey-color: #202124;
+  --text-color: #333;
+  --dark-grey-color: #4e4e4e;
+  --light-grey-color: #e2e2e2;
+  --border-color: #dbdbdb;
+  --border-shadow-color: #e2e2e2;
+  --error-text-color: #b00020;
+  --warning-text-color: #b00020;
+  --success-color-blue: #0a3161;
+  --info-color-blue: #0a3161;
+  /* width & height */
+  --header-height: 120px;
+  --navbar-height: 34px;
+  --header-sort-bar-height: 46px;
+  --border-radius: 5px;
+  --box-shadow: 0 0 0 2px rgb(10, 49, 97, 0.1);
+}
+
+/* font */
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* html */
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  cursor: auto;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+}
+
+img {
+  border: 0;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  border: #dadce0 solid;
+  border-width: 1px 0 0;
+  clear: both;
+  margin-bottom: 19px;
+  margin-top: 20px;
+}
+
+button {
+  overflow: visible;
+  cursor: pointer;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+ul,
+li {
+  cursor: pointer;
+  list-style: none;
+}
+
+a {
+  background: 0 0;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+.card:hover {
+  border: #dadce0 solid 1px;
+  border-radius: 8px;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: border 0.25s;
+}
+
+/* modal for login/sign up */
+/* check! */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  animation: fadeIn 0.1s linear;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  background-color: #333;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 5px;
+  --growth-from: 0.7;
+  --growth-to: 1;
+  animation: growth 0.1s linear;
+}

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- logo icon -->
+    <link rel="icon" href="/assets/huongsaclogo.PNG" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <!-- title -->
+    <title>My Company Website | Website, Domains & Startup</title>
+    <!-- description & content -->
+    <meta name="description" content="Website, Domains & Startup" />
+    <!-- css -->
+    <link type="text/css" rel="stylesheet" href="./final/reset.css" />
+    <link type="text/css" rel="stylesheet" href="./final/base.css" />
+    <link type="text/css" rel="stylesheet" href="./final/maintheme.css" />
+    <link type="text/css" rel="stylesheet" href="./final/main.css" />
+
+    <link type="text/css" rel="stylesheet" href="./final/header.css" />
+    <link type="text/css" rel="stylesheet" href="./final/mainbody.css" />
+    <link type="text/css" rel="stylesheet" href="./final/footer.css" />
+    <link type="text/css" rel="stylesheet" href="./final/sidebar.css" />
+    <link type="text/css" rel="stylesheet" href="./final/button.css" />
+    <!-- GG font Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+    <!-- GG icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <!--  -->
+  <body>
+    <div id="root">
+      <div class="page-wrapper standard-page">
+        <!-- header -->
+        <div class="sticky-header-container">
+          <header class="top-navigation">
+            <div class="container">
+              <!-- logo, link to home -->
+              <div class="top-navigation-wrap">
+                <div class="mainlogo">
+                  <a href="/">
+                    <img src="/assets/huongsaclogo.PNG" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <!-- main menu, search, avatar.. -->
+              <div class="top-navigation-main">
+                <nav class="main-nav">
+                  <ul class="main-menu">
+                    <!-- ABOUT US -->
+                    <li class="top-level-entry-container">
+                      <button
+                        type="button"
+                        id="references-button"
+                        class="top-level-entry menu-toggle"
+                      >
+                        About us
+                      </button>
+                      <a href="/" class="top-level-entry"
+                        ><span class="material-symbols-outlined">
+                          home_app_logo </span
+                        >About us</a
+                      >
+                    </li>
+                    <!-- STARTUP-->
+                    <li class="top-level-entry-container">
+                      <button
+                        type="button"
+                        id="guides-button"
+                        class="top-level-entry menu-toggle"
+                      >
+                        Startup
+                      </button>
+                      <a href="/" class="top-level-entry"
+                        ><span class="material-symbols-outlined"> trophy </span
+                        >Startup</a
+                      >
+                    </li>
+                    <!-- PROJECTS -->
+                    <li class="top-level-entry-container">
+                      <button
+                        type="button"
+                        id="mdn-plus-button"
+                        class="top-level-entry menu-toggle"
+                      >
+                        Projects
+                      </button>
+                      <a href="/" class="top-level-entry"
+                        ><span class="material-symbols-outlined"> webhook </span
+                        >Projects</a
+                      >
+                    </li>
+                    <!-- DOMAINS-->
+                    <li class="top-level-entry-container">
+                      <button
+                        type="button"
+                        id="domains-button"
+                        class="top-level-entry menu-toggle"
+                      >
+                        Domains
+                      </button>
+                      <a class="top-level-entry" href="/"
+                        ><span class="material-symbols-outlined">
+                          rocket_launch
+                        </span>
+                        Domains
+                      </a>
+                    </li>
+                    <!-- COMMUNITY-->
+                    <li class="top-level-entry-container">
+                      <button
+                        type="button"
+                        id="community-button"
+                        class="top-level-entry menu-toggle"
+                      >
+                        Community
+                      </button>
+                      <!-- <span class="material-symbols-outlined">diversity_4</span> -->
+                      <a href="/" class="top-level-entry"
+                        ><span class="material-symbols-outlined"> stream </span
+                        >Community</a
+                      >
+                    </li>
+                    <!-- CONTACT-->
+                    <li class="top-level-entry-container">
+                      <button
+                        type="button"
+                        id="community-button"
+                        class="top-level-entry menu-toggle"
+                      >
+                        Contact us
+                      </button>
+
+                      <a href="/" class="top-level-entry"
+                        ><span class="material-symbols-outlined">
+                          mark_as_unread </span
+                        >Contact us</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+
+                <!-- xem lai thu tu ben phai: 1 search 2 buttons 3 icons 4 avt -->
+                <!-- search ICON -->
+                <div class="header-search">
+                  <form
+                    action=""
+                    class="search-form search-widget"
+                    id="top-nav-search-form"
+                    role="search"
+                  >
+                    <label
+                      id="top-nav-search-label"
+                      for="top-nav-search-input"
+                      class="visually-hidden"
+                      >Search</label
+                    >
+                    <input
+                      autocomplete="off"
+                      id="top-nav-search-input"
+                      type="search"
+                      class="search-input-field"
+                      name="q"
+                      placeholder=""
+                      required=""
+                      value=""
+                    />
+                    <!-- <button
+                      type="button"
+                      class="button action has-icon clear-search-button"
+                    >
+                      <span class="button-wrap">
+                        <span class="icon icon-cancel"></span>
+                        <span class="visually-hidden">Clear search input</span>
+                      </span>
+                    </button>
+                    <button
+                      type="submit"
+                      class="button action has-icon search-button"
+                    >
+                      <span class="button-wrap">
+                        <span class="icon icon-search"></span>
+                        <span class="visually-hidden">Search</span>
+                      </span>
+                    </button> -->
+                  </form>
+                </div>
+
+                <!-- <span class="material-symbols-outlined"> tonality </span> -->
+
+                <!-- EN/VN ICON, da co css languages-switcher-menu -->
+
+                <!-- button Login - Signup -->
+                <ul class="auth-container">
+                  <li>
+                    <a href="/" class="login-link" rel="nofollow">Log in</a>
+                  </li>
+                  <li>
+                    <a href="/" target="_self" class="button primary">
+                      <span class="button-wrap">Sign up</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- theme modes ICON, co css theme-switcher-menu-->
+                <!-- <div class="theme-switcher-menu">
+                  <button
+                    type="button"
+                    class="button action has-icon theme-switcher-menu small"
+                  >
+                    <span class="button-wrap">
+                      <span class="icon-theme-os-default"></span>
+                      Theme
+                    </span>
+                  </button>
+                </div> -->
+
+                <!-- account avt (for login/signup) AVATAR - co css dropdown -->
+                <div class="top-level-entry-container user-menu">
+                  <button
+                    id="my-mdn-plus-button"
+                    type="button"
+                    class="button action top-level-entry menu-toggle user-menu-toggle"
+                  >
+                    <div class="button-wrap">
+                      <div class="avatar-wrap">
+                        <img
+                          alt=""
+                          class="avatar"
+                          src="https://profile.accounts.firefox.com/v1/avatar/T"
+                        />
+                      </div>
+                      <span class="visually-hidden">User menu</span
+                      ><span class="user-menu-id">thuphan273@gmail.com</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <!-- main body -->
+        <!-- SIDEBAR, sua lai link -->
+        <div class="main-wrapper">
+          <div class="sidebar-container">
+            <aside id="sidebar-quicklinks" class="sidebar">
+              <nav class="sidebar-inner">
+                <div class="sidebar-inner-nav">
+                  <div class="sidebar-body">
+                    <ol>
+                      <!-- Startup support program -->
+                      <li>
+                        <span class="material-symbols-outlined"> explore </span>
+                        <a href="/"> Startup Support Program </a>
+                      </li>
+                      <!-- Our projects -->
+                      <li>
+                        <span class="material-symbols-outlined"> stars </span>
+                        <a href="/"> Our Projects </a>
+                      </li>
+                      <!-- Cooperate with us -->
+                      <li>
+                        <span class="material-symbols-outlined">
+                          handshake
+                        </span>
+                        <a href="/"> Cooperate with us </a>
+                      </li>
+                      <!-- Domain for sale -->
+                      <li>
+                        <span class="material-symbols-outlined">
+                          captive_portal
+                        </span>
+                        <a href="/"> Domains for Sale </a>
+                      </li>
+                      <!-- Your Domains -->
+                      <li>
+                        <span class="material-symbols-outlined">
+                          web_traffic
+                        </span>
+                        <a href="/"> Your Domains </a>
+                      </li>
+                      <!-- Donate -->
+                      <li>
+                        <span class="material-symbols-outlined">
+                          shield_with_heart
+                        </span>
+                        <a href="/"> Donate us </a>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </nav>
+            </aside>
+          </div>
+
+          <!-- main content -->
+          <main id="content">
+            <div class="homepage">
+              <!-- 1 Welcome -->
+              <div class="homepage-hero dark">
+                <section>
+                  <h1>Domains and Startup</h1>
+                  <h3>Welcome!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia expedita reprehenderit cumque autem. Iste officia
+                    ipsum tenetur? At fugit, similique nesciunt molestiae
+                    dolorem consequuntur labore explicabo rerum optio quo aut?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Incidunt veniam explicabo rerum accusantium similique, quia
+                    illum soluta! Hic omnis optio sed odio in explicabo vero
+                    ipsam placeat quisquam aliquid? Amet? Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Iste, autem asperiores.
+                    Temporibus perspiciatis beatae facilis neque minus
+                    repudiandae, tenetur velit quod quo dolores vitae,
+                    voluptatem tempora numquam blanditiis saepe expedita?
+                  </p>
+                </section>
+              </div>
+
+              <!-- 2 Projects -->
+              <div class="featured-articles">
+                <h2>Our Projects --- to be our partner</h2>
+                <div class="tile-container">
+                  <div class="article-tile">
+                    <!-- domain.com -->
+                    <a href="/" class="tile-tag">OVOP.com</a>
+                    <!-- description -->
+                    <h3 class="tile-title">
+                      <a href="/">One Village One Product</a>
+                    </h3>
+                    <!-- idea -->
+                    <p>
+                      All about local special product and service, famous and
+                      unique scenic and sightseeing of Vietnam, Asia and around
+                      the world. The best source for you to visit and
+                      experiencing in your next travel plan.
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">SeeChannel.com</a>
+                    <h3 class="tile-title">
+                      <a href="/">The truth way you see the world</a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Expedita ab officia vel distinctio dicta tempore
+                      temporibus molestiae natus quod, praesentium accusamus,
+                      consequuntur perferendis pariatur magni quaerat provident
+                      similique. Quasi, sapiente.
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">Glonet.com</a>
+                    <h3 class="tile-title">
+                      <a href="/">Global networking for everyone</a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Culpa hic exercitationem possimus necessitatibus quas
+                      repellat quisquam aperiam. Adipisci, quaerat consequuntur
+                      eius molestias, deleniti natus ullam explicabo sint
+                      nesciunt sequi facilis.
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">VNWP.com</a>
+                    <h3 class="tile-title">
+                      <a href="/">Vietnam Web Portal</a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Velit, omnis numquam. Perspiciatis ad error nobis officia
+                      laudantium. Porro rem magni excepturi iure illo esse
+                      molestiae reiciendis ipsa, qui quae nisi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 Domains for Startup -->
+              <section class="latest-news">
+                <h2>Domains for Startup --- Our Domain Your Startup</h2>
+                <ul class="news-list">
+                  <li class="news-item">
+                    <!-- idea -->
+                    <p class="news-title">
+                      <span>
+                        <a href="/">Lift-off: The Curriculum launch</a>
+                      </span>
+                      <!-- domain name -->
+                      <span>
+                        <a class="news-source" href="/"
+                          >developer.mozilla.org</a
+                        >
+                      </span>
+                    </p>
+                    <!-- build your startup -->
+                    <span class="news-date">$ $ $</span>
+                  </li>
+                  <li class="news-item">
+                    <p class="news-title">
+                      <span class="news-heading">
+                        <a href="/">Baseline &#x27;s evolution on</a>
+                      </span>
+                      <span>
+                        <a class="news-source" href="/"
+                          >developer.mozilla.org</a
+                        >
+                      </span>
+                    </p>
+                    <span class="news-date">$ $ $</span>
+                  </li>
+                  <li class="news-item">
+                    <p class="news-title">
+                      <span>
+                        <a href="/"
+                          >Introducing the Playground: Bring your code to
+                          life!</a
+                        >
+                      </span>
+                      <span>
+                        <a class="news-source" href="/"
+                          >developer.mozilla.org</a
+                        >
+                      </span>
+                    </p>
+                    <span class="news-date">$ $ $</span>
+                  </li>
+                  <li class="news-item">
+                    <p class="news-title">
+                      <span>
+                        <a href="/">Lift-off: The Curriculum launch</a>
+                      </span>
+                      <span>
+                        <a class="news-source" href="/"
+                          >developer.mozilla.org</a
+                        >
+                      </span>
+                    </p>
+                    <span class="news-date">$ $ $</span>
+                  </li>
+                  <li class="news-item">
+                    <p class="news-title">
+                      <span>
+                        <a href="/">Baseline &#x27;s evolution on</a>
+                      </span>
+                      <span>
+                        <a class="news-source" href="/"
+                          >developer.mozilla.org</a
+                        >
+                      </span>
+                    </p>
+                    <span class="news-date">$ $ $</span>
+                  </li>
+                  <li class="news-item">
+                    <p class="news-title">
+                      <span>
+                        <a href="/"
+                          >Introducing the Playground: Bring your code to
+                          life!</a
+                        >
+                      </span>
+                      <span>
+                        <a class="news-source" href="/"
+                          >developer.mozilla.org</a
+                        >
+                      </span>
+                    </p>
+                    <span class="news-date">$ $ $</span>
+                  </li>
+                </ul>
+              </section>
+
+              <!-- 4 Domains for sale -->
+              <section class="recent-contributions">
+                <h2>Domains for Sale and more</h2>
+                <ul class="contribution-list">
+                  <li class="request-item">
+                    <p class="request-title">
+                      <!-- domain name -->
+                      <a href="/">Fix indexOf() and lastIndexOf()</a>
+                      <!-- description -->
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <!-- price -->
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/"
+                        >Redirect pathway to Curriculum and remove links to
+                        it</a
+                      >
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/">Web/Performance/Speculative_loading ?????</a>
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/">Fix of stylesheet load events example</a>
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/">chore(zh-cn): sync translate content</a>
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/">feat: Editorial review: Fenced Frames docs</a>
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/"
+                        >zh-cn: fix the description of `timeout` option for
+                        `requestIdleCallback()` method</a
+                      >
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/">correct alt info of svelte typescript</a>
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/">Fixed type of stdDeviation in feDropShadow</a>
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                  <li class="request-item">
+                    <p class="request-title">
+                      <a href="/"
+                        >[zh-cn]: remove the out-of-date warning in
+                        `Event.timeStamp`</a
+                      >
+                      <span>
+                        <a class="request-repo" href="/">hello</a>
+                      </span>
+                    </p>
+                    <span class="request-date">$ $ $</span>
+                  </li>
+                </ul>
+              </section>
+              <!-- 5 Cooperation -->
+              <div class="featured-articles">
+                <h2>Cooperation and Partners</h2>
+                <div class="tile-container">
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">ICANN</a>
+                    <h3 class="tile-title">
+                      <a href="https://www.icann.org/"
+                        >https://www.icann.org/</a
+                      >
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam illo perspiciatis voluptas sequi expedita
+                      dignissimos distinctio, sapiente odit, enim natus
+                      voluptatem, necessitatibus cupiditate eaque labore ad
+                      assumenda alias consequuntur laudantium.
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">GODADDY</a>
+                    <h3 class="tile-title">
+                      <a href="https://www.godaddy.com/"
+                        >https://www.godaddy.com/</a
+                      >
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis itaque culpa laborum pariatur possimus
+                      inventore obcaecati eum aliquam assumenda magni, maxime
+                      cupiditate. Expedita consequatur sapiente pariatur totam
+                      reprehenderit veritatis sint?
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">WHOIS</a>
+                    <h3 class="tile-title">
+                      <a href="https://who.is/">https://who.is/</a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel porro architecto, fuga quod eaque velit nobis
+                      provident reprehenderit voluptates eius mollitia in
+                      exercitationem omnis eveniet! Ex non excepturi omnis quam!
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">Domain Appraisals</a>
+                    <h3 class="tile-title">
+                      <a href="https://sedo.com">https://sedo.com</a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Soluta dolores, quia eos unde quos labore itaque, nam fuga
+                      neque commodi dolor nostrum ut necessitatibus. Nulla
+                      deserunt ut similique odit eos.
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">WHOIS</a>
+                    <h3 class="tile-title">
+                      <a href="https://who.is/">https://who.is/</a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel porro architecto, fuga quod eaque velit nobis
+                      provident reprehenderit voluptates eius mollitia in
+                      exercitationem omnis eveniet! Ex non excepturi omnis quam!
+                    </p>
+                  </div>
+                  <div class="article-tile">
+                    <a href="/" class="tile-tag">Domain Appraisals</a>
+                    <h3 class="tile-title">
+                      <a href="https://sedo.com">https://sedo.com</a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Soluta dolores, quia eos unde quos labore itaque, nam fuga
+                      neque commodi dolor nostrum ut necessitatibus. Nulla
+                      deserunt ut similique odit eos.
+                    </p>
+                  </div>
+                </div>
+                <section class="place hp-main"></section>
+                <section class="place hp-main"></section>
+                <section class="place hp-main"></section>
+                <section class="place hp-main"></section>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer id="nav-footer" class="page-footer">
+        <div class="page-footer-grid">
+          <!-- logo -->
+          <div class="page-footer-logo-col">
+            <div class="mainlogo">
+              <a href="/">
+                <img src="/assets/huongsaclogo.PNG" alt="" />
+              </a>
+            </div>
+            <!-- slogan -->
+            <p>World Wide Web For All</p>
+          </div>
+          <!-- category footer -->
+          <div class="page-footer-nav-col-1">
+            <h2 class="footer-nav-heading">Biz Holding</h2>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="/">About</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="/">Blog</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="/" target="_blank" rel="noopener noreferrer"
+                  >Careers</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a href="/">Advertise with us</a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="page-footer-nav-col-2">
+            <h2 class="footer-nav-heading">Support</h2>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">Business Development</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">Online Marketplaces</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">Email</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">Subdomain</a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="page-footer-nav-col-3">
+            <h2 class="footer-nav-heading">Our communities</h2>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">Community</a>
+              </li>
+              <li class="footer-nav-item">
+                <a
+                  class="footer-nav-link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Affiliates</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a
+                  class="footer-nav-link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Support</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a
+                  class="footer-nav-link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Chat</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="page-footer-nav-col-4">
+            <h2 class="footer-nav-heading">Developers</h2>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">Web Technologies</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">eCommerce</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="/">IT Project Management</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="/" target="_blank" rel="noopener noreferrer"
+                  >Programming & Code</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- footer legal -->
+          <div class="page-footer-legal">
+            <p id="license" class="page-footer-legal-text">
+              Visit
+              <!-- -->
+              <a href="/" target="">MyCompany</a>. 2000 - 2024 by BizHolding,
+              Inc.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <script src="mdn.js"></script> -->
+  </body>
+</html>

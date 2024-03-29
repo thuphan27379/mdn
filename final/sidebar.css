@@ -1,0 +1,240 @@
+.sidebar {
+  max-width: 300px !important;
+  padding-left: 60px !important;
+  font-size: 15px !important;
+  padding-top: 30px;
+}
+
+.sidebar {
+  color: white;
+
+  a {
+    color: white;
+    display: inline-flex;
+    hyphens: auto;
+    padding: 0.25rem;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  strong {
+    display: flex;
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+  li:first-of-type strong {
+    margin-top: unset;
+  }
+
+  ol {
+    ol,
+    ul {
+      padding-left: 0.5rem;
+    }
+
+    ol {
+      li {
+        .icon {
+          margin-right: 0.01em;
+        }
+
+        &.no-bullet {
+          display: block;
+          font-weight: var(--font-body-strong-weight);
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .icon {
+    align-self: center;
+    background-size: 14px;
+    height: 14px;
+    margin-right: -0.25rem;
+    mask-size: 14px;
+    width: 14px;
+  }
+
+  @media screen and (min-width: screen-md) {
+    .place {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: screen-md) {
+    display: flex;
+  }
+
+  @media screen and (min-width: screen-lg),
+    screen and (min-height: screen-height-place-limit) {
+    display: block;
+    overflow: auto;
+  }
+
+  @media screen and (min-width: screen-xl) {
+    max-height: var(--max-height);
+    position: sticky;
+    top: var(--offset);
+  }
+}
+
+.sidebar a {
+  color: white;
+  display: inline-flex;
+  padding: 0.25rem;
+}
+
+.sidebar a:focus,
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar strong {
+  display: flex;
+  font-size: var(--type-base-font-size-rem);
+  margin-top: 1rem;
+}
+
+.sidebar li:first-of-type strong {
+  margin-top: unset;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+  align-items: center;
+  display: flex;
+}
+
+.sidebar .icon {
+  align-self: center;
+  background-size: 14px;
+  height: 14px;
+  margin-right: -0.25rem;
+  width: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: 100vh;
+    left: 0;
+    max-height: 100vh;
+    position: fixed;
+    right: 0;
+    top: var(--offset);
+    transform: translateX(-100%);
+  }
+
+  .sidebar .sidebar-inner {
+    background: var(--background-primary);
+    border-right: 1px solid var(--border-primary);
+    display: grid;
+    height: var(--max-height);
+    max-height: var(--max-height);
+    max-width: 20rem;
+    overflow: hidden;
+    overflow: auto;
+    padding: 1rem;
+    position: relative;
+    transform: translateX(-100%);
+    transition: transform 0.2s linear;
+    width: 80vw;
+    will-change: transform;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-height: 44rem) {
+  .sidebar .sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sidebar .sidebar-inner .sidebar-inner-nav {
+    display: block;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar .sidebar-inner .place {
+    align-self: center;
+    grid-row: 2/3;
+    justify-self: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sidebar .place {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+  }
+}
+
+@media screen and (min-height: 44rem), screen and (min-width: 992px) {
+  .sidebar {
+    display: block;
+    overflow: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    max-height: var(--max-height);
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--offset);
+  }
+}
+
+/* sidebar-container */
+.sidebar-container {
+  --offset: var(--sticky-header-with-actions-height);
+  --max-height: calc(100vh - var(--offset));
+  max-height: var(--max-height);
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--offset);
+  z-index: var(--z-index-sidebar-mobile);
+}
+
+@media screen and (min-width: 769px) and (min-height: 44rem) {
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sidebar-container {
+    z-index: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (not (min-height: 44rem)) {
+  .sidebar-container {
+    overflow: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar-container {
+    display: contents;
+  }
+
+  .sidebar-container .sidebar {
+    mask-image: none;
+  }
+}
